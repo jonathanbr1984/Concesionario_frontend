@@ -1,0 +1,26 @@
+<div class="container">
+<div class="text-center text-info">Aqui puedes registrar tu venta...</div>
+<section>
+	<form ng-submit="vm.createVenta()">
+		<div class="form-group">
+			<label for="">Monto</label>
+			<input type="text" class="form-control" placeholder="Ingresa el valor" ng-model="vm.venta.monto">
+		</div>
+		<div class="form-group">
+			<label for="">Cliente</label>
+			<select class="form-control" ng-model="vm.venta.idClientes.id">
+				<option ng-value="ventas.idClientes.id" ng-repeat="cliente in vm.clientes">{{cliente.nombres}}</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="">Vehiculo</label>
+			<select class="form-control" ng-model="vm.venta.idVehiculos.id">
+				<option ng-value="ventas.idVehiculos.id" ng-repeat="vehiculo in vm.vehiculos">{{vehiculo.marca}}</option>
+			</select>
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Registrar</button>	
+	</form>
+</section>
+</div>
