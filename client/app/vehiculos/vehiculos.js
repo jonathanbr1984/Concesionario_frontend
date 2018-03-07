@@ -8,7 +8,7 @@ angular.module('palmiConApp')
         template: '<vehiculos-create></vehiculos-create>'
       })
       .state('vehiculos-update', {
-        url: '/vehiculos-update/:id',
+        url: '/vehiculos-update/:idVehiculo',
         template: '<vehiculos-update></vehiculos-update>'
       });
   });

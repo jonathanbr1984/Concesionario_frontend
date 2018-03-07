@@ -14,7 +14,7 @@
       this.clientesService.query().$promise
       .then(response => {
         this.cliente = response;
-        console.log('Clientes', response);
+        // console.log('Clientes', response);
       })
       .catch(err => {
         console.log('Error Cliente', err);
@@ -22,7 +22,7 @@
       this.ventasService.query().$promise
       .then(response => {
         this.venta = response;
-        console.log('Ventas', response);
+        // console.log('Ventas', response);
       })
       .catch(err => {
         console.log('Error Venta', err);
@@ -30,7 +30,7 @@
       this.vehiculosService.query().$promise
       .then(response => {
         this.vehiculo = response;
-        console.log('Vehiculos', response);
+        // console.log('Vehiculos', response);
       })
       .catch(err => {
         console.log('Error Vehiculo', err);
